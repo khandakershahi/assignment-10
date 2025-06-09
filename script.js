@@ -4,7 +4,6 @@
 
 
 
-
 function countVowels(myString) {
     const vowels = ["a", "e", "i", "o", "u"];
     let stringLowercase = myString.toLowerCase();
@@ -22,7 +21,7 @@ function countVowels(myString) {
 
 console.log(countVowels("Khandaker Shahi"));
 
-document.getElementById("outputVowels").innerHTML = countVowels("Khandaker Shahi");
+document.getElementById("outputVowels").innerHTML = "Vowels counted: " + countVowels("Khandaker Shahi");
 
 // 2. Write a function named sortNumbers that takes an array of numbers and returns the array sorted in ascending order.
 
@@ -120,3 +119,13 @@ document.getElementById("isEmptyString").innerText = "The string is empty: " + i
 
 // Ex: removeNegativeNumbers([-5, 2, -1, 6, 0]) // Output: [2, 6, 0]
 
+
+function removeNegativeNumbers(arr){
+    return arr.filter(function(num){
+        return num >= 0;
+    })
+}
+
+console.log(removeNegativeNumbers([-5, 2, -1, 6, 0]));
+
+document.getElementById("removeNegativeNumbers").innerText = "Negetive number removed array is: " + removeNegativeNumbers([-5, 2, -1, 6, 0]);
