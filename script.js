@@ -106,7 +106,14 @@ document.getElementById("hasSpace").innerText = "The string has space: " + hasSp
 
 // Ex: isEmptyString("Hello")  // Output: false
 
+function isEmptyString(arg){
+    return arg === "";
+}
 
+console.log(isEmptyString(""));
+console.log(isEmptyString("hello"));
+
+document.getElementById("isEmptyString").innerText = "The string is empty: " + isEmptyString("") + "\n" + "The string is empty: "  + isEmptyString("hello");
 
 
 // 8. Write a function removeNegativeNumbers(arr) that removes all negative numbers from the array.
