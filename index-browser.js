@@ -21,7 +21,7 @@ function countVowels(myString) {
 
 console.log(countVowels("Khandaker Shahi"));
 
-
+document.getElementById("outputVowels").innerHTML = "Vowels counted: " + countVowels("Khandaker Shahi");
 
 // 2. Write a function named sortNumbers that takes an array of numbers and returns the array sorted in ascending order.
 
@@ -34,7 +34,7 @@ function sortNumbers(numArry){
 
 console.log(sortNumbers([4, 1, 8, 3]));
 
-   
+    document.getElementById("sortedNumber").innerText = "Sorted Numbers: " + sortNumbers([4, 1, 8, 3]);
 
 // 3. Write a function named reverseString that takes a string and returns the reversed version of the string.
 
@@ -52,6 +52,7 @@ function  reverseString(arg){
 
 console.log(reverseString("Hello"));
 
+    document.getElementById("reverseStringoutput").innerText = "Reverse String is: " + reverseString("Hello");
 
 
 // 4. Write a function named getLastElement that takes an array and returns the last element.
@@ -67,6 +68,7 @@ function getLastElement(numsArray){
 
 console.log(getLastElement([10, 20, 30, 40]));
 
+document.getElementById("lastElementOutput").innerText = "Last element is: " + getLastElement([10, 20, 30, 40]);
 
 // 5. Write a function named mergeArrays that takes two arrays and returns a new array containing elements from both arrays.
 
@@ -80,6 +82,7 @@ function mergeArrays(ary1, ary2){
 
 console.log(mergeArrays([1, 2], [3, 4]));
 
+document.getElementById("mergeArrays").innerText = "Here is the marged array: " + getLastElement([10, 20, 30, 40]);
 
 
 // 6. Write a function named hasSpace that takes a string and returns true if it contains a space character.
@@ -94,6 +97,7 @@ function hasSpace(arg){
 console.log(hasSpace("Ostad Limited"));
 
 
+document.getElementById("hasSpace").innerText = "The string has space: " + hasSpace("Ostad Limited");
 
 // 7. Write a function named isEmptyString that takes a string and returns true if the string is empty, otherwise false.
 
@@ -108,6 +112,7 @@ function isEmptyString(arg){
 console.log(isEmptyString(""));
 console.log(isEmptyString("hello"));
 
+document.getElementById("isEmptyString").innerText = "The string is empty: " + isEmptyString("") + "\n" + "The string is empty: "  + isEmptyString("hello");
 
 
 // 8. Write a function removeNegativeNumbers(arr) that removes all negative numbers from the array.
@@ -123,3 +128,4 @@ function removeNegativeNumbers(arr){
 
 console.log(removeNegativeNumbers([-5, 2, -1, 6, 0]));
 
+document.getElementById("removeNegativeNumbers").innerText = "Negetive number removed array is: " + removeNegativeNumbers([-5, 2, -1, 6, 0]);
