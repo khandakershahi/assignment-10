@@ -17,7 +17,7 @@ function countVowels(myString) {
         }
     }
 
-    return "Here is vowels count: " + count;
+    return  count;
 }
 
 console.log(countVowels("Khandaker Shahi"));
@@ -30,7 +30,7 @@ document.getElementById("outputVowels").innerHTML = countVowels("Khandaker Shahi
 
 
 function sortNumbers(numArry){
-    return "Here is sorted numbers: " + numArry.sort(function(a, b){return a - b});
+    return numArry.sort(function(a, b){return a - b});
 }
 
 console.log(sortNumbers([4, 1, 8, 3]));
@@ -48,7 +48,7 @@ function  reverseString(arg){
     const result = stringArray.reverse();
     const resultJoin = result.join("");
 
-    return "Here is reverse string: " + resultJoin;
+    return resultJoin;
 }
 
 console.log(reverseString("Hello"));
@@ -64,7 +64,7 @@ console.log(reverseString("Hello"));
 function getLastElement(numsArray){
     const lastValue = numsArray[numsArray.length - 1];
 
-    return "Last element is: " + lastValue;
+    return lastValue;
 }
 
 console.log(getLastElement([10, 20, 30, 40]));
@@ -78,23 +78,36 @@ document.getElementById("lastElementOutput").innerText = "Last element is: " + g
 function mergeArrays(ary1, ary2){
     const result = ary1.concat(ary2);
 
-    return "Here is the marged array: " + result;
+    return result;
 }
 
 console.log(mergeArrays([1, 2], [3, 4]));
 
-document.getElementById("mergeArrays").innerText = "LHere is the marged array: " + getLastElement([10, 20, 30, 40]);
+document.getElementById("mergeArrays").innerText = "Here is the marged array: " + getLastElement([10, 20, 30, 40]);
 
 
 // 6. Write a function named hasSpace that takes a string and returns true if it contains a space character.
 
 // Ex: hasSpace("Ostad Limited")  // Output: true
 
+function hasSpace(arg){
+    return arg.includes(" ");
+
+}
+
+console.log(hasSpace("Ostad Limited"));
+
+
+document.getElementById("hasSpace").innerText = "The string has space: " + hasSpace("Ostad Limited");
+
 // 7. Write a function named isEmptyString that takes a string and returns true if the string is empty, otherwise false.
 
 // Ex: isEmptyString("")  // Output: true,
 
 // Ex: isEmptyString("Hello")  // Output: false
+
+
+
 
 // 8. Write a function removeNegativeNumbers(arr) that removes all negative numbers from the array.
 
