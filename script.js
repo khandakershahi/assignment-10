@@ -75,8 +75,15 @@ document.getElementById("lastElementOutput").innerText = "Last element is: " + g
 
 // Ex: mergeArrays([1, 2], [3, 4])  // Output: [1, 2, 3, 4]
 
+function mergeArrays(ary1, ary2){
+    const result = ary1.concat(ary2);
 
+    return "Here is the marged array: " + result;
+}
 
+console.log(mergeArrays([1, 2], [3, 4]));
+
+document.getElementById("mergeArrays").innerText = "LHere is the marged array: " + getLastElement([10, 20, 30, 40]);
 
 
 // 6. Write a function named hasSpace that takes a string and returns true if it contains a space character.

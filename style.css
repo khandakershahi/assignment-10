@@ -75,3 +75,11 @@ button:hover {
     color: #222;
     text-align: center;
 }
+
+#mergeArrays{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    text-align: center;
+}
