@@ -30,22 +30,12 @@ document.getElementById("outputVowels").innerHTML = countVowels("Khandaker Shahi
 
 
 function sortNumbers(numArry){
-    return numArry.sort(function(a, b){return a - b});
+    return "Here is sorted numbers: " + numArry.sort(function(a, b){return a - b});
 }
 
-function handleClick() {
-    const userInput = document.getElementById("numberSort").value;
-    
-    
-    const numberArray = userInput
-        .split(",")
-        .map(num => Number(num.trim()))
-        .filter(num => !isNaN(num));  
+console.log(sortNumbers([4, 1, 8, 3]));
 
-    const result = sortNumbers(numberArray);
-    
-    document.getElementById("sortedNumber").innerText = "Sorted Numbers: " + result.join(", ");
-}
+    document.getElementById("sortedNumber").innerText = "Sorted Numbers: " + sortNumbers([4, 1, 8, 3]);
 
 // 3. Write a function named reverseString that takes a string and returns the reversed version of the string.
 
@@ -58,15 +48,13 @@ function  reverseString(arg){
     const result = stringArray.reverse();
     const resultJoin = result.join("");
 
-    return resultJoin
+    return "Here is reverse string: " + resultJoin;
 }
 
+console.log(reverseString("Hello"));
 
-function handleClick() {
-    const userInput = document.getElementById("reverseStringInput").value;
-    const result = reverseString(userInput);
-    document.getElementById("reverseStringoutput").innerText = "Reverse String is: " + result;
-}
+    document.getElementById("reverseStringoutput").innerText = "Reverse String is: " + reverseString("Hello");
+
 
 // 4. Write a function named getLastElement that takes an array and returns the last element.
 
@@ -74,19 +62,22 @@ function handleClick() {
 
 
 function getLastElement(numsArray){
-    const myArray = numsArray.split(",").map(Number);
-    const lastValue = myArray[myArray.length - 1];
+    const lastValue = numsArray[numsArray.length - 1];
 
-    return lastValue;
+    return "Last element is: " + lastValue;
 }
 
-console.log(getLastElement("10, 20, 30, 40"));
+console.log(getLastElement([10, 20, 30, 40]));
 
-
+document.getElementById("lastElementOutput").innerText = "Last element is: " + getLastElement([10, 20, 30, 40]);
 
 // 5. Write a function named mergeArrays that takes two arrays and returns a new array containing elements from both arrays.
 
 // Ex: mergeArrays([1, 2], [3, 4])  // Output: [1, 2, 3, 4]
+
+
+
+
 
 // 6. Write a function named hasSpace that takes a string and returns true if it contains a space character.
 
