@@ -17,11 +17,12 @@ function countVowels(myString) {
         }
     }
 
-    return `Here is vowels count: ${count}`;
+    return "Here is vowels count: " + count;
 }
 
 console.log(countVowels("Khandaker Shahi"));
 
+document.getElementById("outputVowels").innerHTML = countVowels("Khandaker Shahi");
 
 // 2. Write a function named sortNumbers that takes an array of numbers and returns the array sorted in ascending order.
 
